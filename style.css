@@ -1,0 +1,167 @@
+
+
+:root {
+    --clr-darkest : #0d1b2a;
+    --clr-dark: #1b263b;
+    --clr-mid: #415a77;
+    --clr-secondary :#778da9;
+    --clr-primary :#e0e1dd ;
+}
+
+* , *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+
+html {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+button {
+    background:none;
+    border: none;
+}
+
+.navbar {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-darkest);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap:0.75rem;
+}
+
+.logo .logoName, i {
+    font-size: larger;
+    color: var(--clr-primary);
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search > * {
+    height: 2rem;
+}
+
+.search input {
+    width: 320px;
+    padding-left:1rem ;
+    border-top-left-radius:25px ;
+    border-bottom-left-radius:25px ;
+    border:none;    
+    background-color: var(--clr-mid);
+    color:var(--clr-primary);
+    font-size: large;
+    border:2px solid var(--clr-primary);
+}
+
+
+
+.search .searchBtn {
+    width: 25px;
+    background-color: var(--clr-darkest);
+    border-top-right-radius: 25px ;
+    border-bottom-right-radius: 25px ;
+    border: 2px solid var(--clr-primary);
+    border-left: none;
+}
+
+.hover:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+/* profile */
+
+.profile {
+    display: flex;
+    gap:2rem;
+    margin-right: 1rem;
+}
+
+
+/* hero */
+
+.hero {
+    padding: 1rem 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap : 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--clr-dark);
+}
+
+.hero .videoContainer {
+    width: 15rem;
+    min-height: 10rem;
+    background-color: var(--clr-secondary);
+    backdrop-filter: blur(10px);
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.6rem;
+    opacity: 0.8;
+    transition: all ease 0.7s;
+
+}
+
+.hero .videoContainer:hover {
+    cursor: pointer;
+    outline: 3px solid var(--clr-primary);
+    opacity: 1;
+    scale: 1.07;
+}
+
+.videoContainer img {
+    object-fit: cover;
+    display: inline-block;
+    width: 100%;
+    height: 7rem;
+    margin-bottom: 0.4rem;
+    border-top-right-radius: 0.6rem;
+    border-top-left-radius: 0.6rem;
+}
+
+
+
+.videoContainer h3, .videoContainer p {
+    align-self: self-start;
+    margin-left: 0.6rem;
+}
+
+.videoContainer h3 {
+    margin-bottom: 0.2rem;
+    color : var(--clr-darkest);
+
+}
+
+.videoContainer p {
+    padding-bottom:5px;
+    color : var(--clr-dark);
+
+}
+
+

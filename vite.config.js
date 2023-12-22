@@ -1,3 +1,3 @@
 export default {
-    base : '/videoTube-frontend/'
+    base : '/yt-clone/'
  };

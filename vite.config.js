@@ -1,3 +1,3 @@
-export default defineConfig({
-    base : "/yt-clone/"
- })
+export default {
+    base : '/videoTube-frontend/'
+ };
